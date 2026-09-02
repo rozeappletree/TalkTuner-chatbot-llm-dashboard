@@ -171,3 +171,6 @@ src/.ipynb_checkpoints
 data/.ipynb_checkpoints
 intervention_tutorial.ipynb
 intervention_results/
+
+# Extracted dataset folders (unzipped from data/dataset/*.zip)
+data/dataset/*/
