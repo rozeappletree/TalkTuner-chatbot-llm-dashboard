@@ -37,7 +37,7 @@ dependencies:
     - async-timeout==4.0.2
     - attrs==24.2.0
     - babel==2.16.0
-#      - git+https://github.com/davidbau/baukit.git
+    - git+https://github.com/davidbau/baukit.git
     - beautifulsoup4==4.12.3
     - bidict==0.23.1
     - bleach==6.1.0
@@ -194,7 +194,7 @@ dependencies:
     - tokenizers==0.20.0
     - tomli==2.0.1
     - torch==2.4.1
-#     - torchaudio==0.12.1+cu116
+    - torchaudio==0.12.1+cu116
     - torchvision==0.19.1
     - tornado==6.4.1
     - tqdm==4.66.5
