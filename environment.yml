@@ -146,7 +146,7 @@ dependencies:
     - plotly==5.24.1
     - prometheus-client==0.21.0
     - prompt-toolkit==3.0.48
-    - protobuf==5.28.2
+    - protobuf==3.20.3
     - psutil==5.9.5
     - ptyprocess==0.7.0
     - pure-eval==0.2.3
