@@ -1,0 +1,1 @@
+sudo fuser -k /dev/nvidia*
