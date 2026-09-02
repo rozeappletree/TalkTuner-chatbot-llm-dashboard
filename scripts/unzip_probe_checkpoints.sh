@@ -15,8 +15,16 @@ os.chdir(checkpoints_dir)
 
 for f in sorted(glob.glob("*.zip")):
     dirname = f[:-4]
-    os.makedirs(dirname, exist_ok=True)
     with zipfile.ZipFile(f) as z:
-        z.extractall(dirname)
+        names = z.namelist()
+        # If every entry is already nested under a top-level folder matching
+        # dirname, extract next to the zip so we don't end up with
+        # dirname/dirname/... Otherwise extract into dirname as before.
+        if names and all(n.startswith(dirname + "/") for n in names):
+            target = "."
+        else:
+            target = dirname
+            os.makedirs(target, exist_ok=True)
+        z.extractall(target)
     print(f"unzipped {f} -> {dirname}")
 EOF

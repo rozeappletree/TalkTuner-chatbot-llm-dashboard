@@ -463,7 +463,7 @@ def main():
     ap = argparse.ArgumentParser(description="Read and steer Llama-2-13b-chat's internal user model.")
     ap.add_argument("--probe-dir", required=True,
                     help="directory containing unzipped reading_probe/ and controlling_probe/")
-    ap.add_argument("--model", default="meta-llama/Llama-2-13b-chat-hf")
+    ap.add_argument("--model", default="NousResearch/Llama-2-13b-chat-hf")
     ap.add_argument("--read-layer", type=int, default=30)
     ap.add_argument("--strength", type=float, default=8.0)
     ap.add_argument("--layers", type=int, nargs=2, default=[19, 29], metavar=("LO", "HI"))
